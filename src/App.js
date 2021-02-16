@@ -5,10 +5,10 @@ import EmployeesContainer from "./components/Container/EmployeesContainer.js";
 
 function App() {
     return (
-        <>
+        <div>
             <Header />
             <EmployeesContainer />
-        </>
+        </div>
     );
 };
 
