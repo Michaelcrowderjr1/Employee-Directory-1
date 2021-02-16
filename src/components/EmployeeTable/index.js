@@ -1,3 +1,4 @@
+// Got table logic from https://getbootstrap.com/docs/4.1/content/tables/
 import React from "react";
 import "./style.css"
 
