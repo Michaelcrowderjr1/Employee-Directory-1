@@ -60,8 +60,8 @@ class EmployeesContainer extends Component {
                 a = a[key];
                 b = b[key];
 
-              // If secondary comparison given and primary comparison is equal
-              // Example: Sorting by last name, if last names are equal, then sort that instance by first name instead.
+                // If secondary comparison given and primary comparison is equal
+                // Example: Sorting by last name, if last names are equal, then sort that instance by first name instead.
                 if (primary) {
                     if (secondary && a[primary] === b[primary]) {
                         return a[secondary].localeCompare(b[secondary]);
@@ -103,7 +103,7 @@ class EmployeesContainer extends Component {
       }
     };
 
-    //Format date by adding "dashes"
+    //Format ISO 8601 date to MM-DD-YYYY"
     formatDate = (date) => {
         date = new Date(date);
         let dob = [];
@@ -117,7 +117,7 @@ class EmployeesContainer extends Component {
 
     render() {
         return (
-            <>
+            <div>
                 <SearchBar
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
@@ -131,7 +131,7 @@ class EmployeesContainer extends Component {
                         formatDate={this.formatDate}
                     />
                 </div>
-            </>
+            </div>
         );
     }
 }
