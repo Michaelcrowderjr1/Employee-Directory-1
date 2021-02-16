@@ -1,4 +1,5 @@
-// Got table logic from https://getbootstrap.com/docs/4.1/content/tables/
+// Got table logic from https://getbootstrap.com/docs/4.6/content/tables/
+// Here is the JSON layout from randomuser.me
 import React from "react";
 import "./style.css"
 
